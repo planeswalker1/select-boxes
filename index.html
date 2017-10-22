@@ -27,11 +27,31 @@
           <option>Water</option>
         </select>
       </div>
+      <p><strong>Which ice cream flavor do you like?</strong></p>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input class="form-check-input" type="radio" name="flavor" id="flavor" value="strawberry shortcake" checked>
+          Strawberry Shortcake
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input class="form-check-input" type="radio" name="flavor" id="flavor" value="chocolate">
+          Chocolate
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input class="form-check-input" type="radio" name="flavor" id="flavor" value="cookies and cream">
+          Cookies &amp; Cream
+        </label>
+      </div>
       <button class="btn btn-inverse" type="submit">Submit!</button>
     </form>
     <div class="info">
       <p>Your name is <span id="outputInput"></span></p>
       <p>One of your favorite beverages is <span id="outputSelect"></span></p>
+      <p>You like <span id="outputRadio"></span> ice cream</p>
     </div>
   </div>
 </body>
