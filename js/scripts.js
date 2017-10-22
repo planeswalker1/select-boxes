@@ -12,10 +12,10 @@ $('form#survey').submit(function(event) {
   // let flavor = $('input:radio[name=flavor]:checked').val();
   let dob = $('input#born').val();
   let color = $('input#color').val();
-  $('span#outputInput').text(name);
-  $('span#outputSelect').text(beverage);
-  $('span#outputRadio').text(flavor);
-  $('span#outputDob').text(dob);
-  $('span#outputColor').text(color);
+  inputReplaceText('span#outputInput', name);
+  inputReplaceText('span#outputSelect', beverage);
+  inputReplaceText('span#outputRadio', flavor);
+  inputReplaceText('span#outputDob', dob);
+  inputReplaceText('span#outputColor', color);
   $('div.info').slideDown();
 });
