@@ -1,7 +1,9 @@
+// Business (or back-end) logic:
 function inputReplaceText (selector, value) {
  return $(selector).text(value);
 }
 
+//Everything below this line is user interface (or front-end) logic:
 $('form#survey').submit(function(event) {
   event.preventDefault();
   let name = $('input#name').val();
