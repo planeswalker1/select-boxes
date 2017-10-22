@@ -1,3 +1,7 @@
+function inputReplaceText (selector, value) {
+ return $(selector).text(value);
+}
+
 $('form#survey').submit(function(event) {
   event.preventDefault();
   let name = $('input#name').val();
